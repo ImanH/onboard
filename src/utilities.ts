@@ -257,6 +257,10 @@ export function getProviderName(provider: any): string | undefined {
     return 'MathWallet'
   }
 
+  if (provider.isDIDWallet) {
+    return 'DIDWallet'
+  }
+
   if (provider.isWalletIO) {
     return 'wallet.io'
   }
@@ -317,6 +321,10 @@ export function getProviderName(provider: any): string | undefined {
     return 'Tally'
   }
 
+  if (provider.isTokenary) {
+    return 'Tokenary'
+  }
+
   if (provider.isFrame) {
     return 'Frame'
   }
@@ -355,6 +363,10 @@ export function getProviderName(provider: any): string | undefined {
 
   if (provider.isBlockWallet) {
     return 'BlockWallet'
+  }
+
+  if (provider.isOneInchIOSWallet) {
+    return '1inch'
   }
 
   if (provider.isOneInchIOSWallet) {
